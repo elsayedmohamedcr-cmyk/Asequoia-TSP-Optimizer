@@ -1,6 +1,5 @@
 Academic Research & Theoretical Foundations
 
-Asequoia Innovation Labs
 Elsayed Mohamed
 
 Welcome to the academic research directory of the Asequoia Flux project. This repository contains the foundational manuscripts proposing a novel, continuous-relaxation paradigm for combinatorial optimization, with a primary focus on the Traveling Salesperson Problem (TSP).
