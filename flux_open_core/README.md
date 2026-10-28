@@ -27,8 +27,8 @@ pip install numpy
 
 # Run the basic solver
 python flux_basic_solver.py
-
-####🏢 Flux Enterprise & Commercial License
+```
+#### 🏢 Flux Enterprise & Commercial License
 The code provided in this open-core repository is the Academic Proof-of-Concept. It successfully demonstrates the polynomial-time convex mapping but is intentionally unoptimized for large-scale production routing.
 
 The Flux Enterprise Engine—which features hyper-optimized C++ backends, zero matrix pre-computation, spatial suction trees, and sub-3-millisecond latencies for 1,000+ nodes—is closed-source.
@@ -37,4 +37,4 @@ If you are a logistics enterprise, emergency dispatch utility, or supply chain s
 
 Contact: asequoia.innovation.hq@gmail.com
 
-© 2026 ELSAYED MOHAMED @ Asequoia Innovation Labs. All rights reserved
+© 2026 ELSAYED MOHAMED @ Asequoia Innovation Labs. All rights reserved.
