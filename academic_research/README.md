@@ -2,6 +2,8 @@ Academic Research & Theoretical Foundations
 
 Elsayed Mohamed
 
+10.5281/zenodo.23735271
+
 Welcome to the academic research directory of the Asequoia Flux project. This repository contains the foundational manuscripts proposing a novel, continuous-relaxation paradigm for combinatorial optimization, with a primary focus on the Traveling Salesperson Problem (TSP).
 Objective & Scope
 The P = NP question remains one of the most profound and heavily scrutinized open problems in theoretical computer science. The research enclosed herein does not claim to have trivially resolved this millennium prize problem; rather, it presents a serious, mathematically rigorous attempt to circumvent the exponential complexity blowup (O(n!)) inherent in discrete combinatorial search algorithms.
