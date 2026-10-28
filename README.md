@@ -1,34 +1,26 @@
-# Asequoia Innovation Labs | Algebraic Optimization Framework
+Asequoia Innovation Labs | Algebraic & Physics-Inspired Optimization Framework
+Exploratory Continuous-Relaxation Heuristics for the Euclidean TSP
 
-## Physics-Based & Algebraic Continuous Relaxation Solver for TSP (P=NP Framework)
+An exploratory continuous-relaxation framework designed to investigate the Traveling Salesperson Problem (TSP) using a degree-constrained 2-factor polytope, spectral connectivity regularization, and homotopy-based parameter continuation.
 
-A deterministic, continuous-relaxation algebraic framework designed to solve NP-Hard combinatorial optimization problems—specifically the **Traveling Salesperson Problem (TSP)**—via continuous matrix flows, mass-preserving erosion, topological repulsion, and fractional crystallization.
+🚀 Overview
+Traditional approaches to NP-hard combinatorial optimization rely on discrete search and branching, facing exponential complexity blowup ($O(n!)$). This project explores an alternative continuous-relaxation paradigm combining four core mechanisms:
+1. Cost Normalization & Landscape Pre-conditioning: Bounded cost scaling to stabilize continuous optimization dynamics.
+2. Degree-Constrained Relaxation & Lagrange Multipliers: Maintaining weighted degree-two constraints over the fractional 2-factor polytope.
+3. Spectral Connectivity Regularization: Using the Fiedler eigenvalue ($\lambda_2$) of the graph Laplacian to encourage network connectivity.
+4. Homotopy Continuation & Double-Well Freezing: A quartic double-well penalty schedule designed to encourage near-binary edge weights ($X_{ij} \in [0, 1]$).
 
----
+⚠️ Scientific Scope & Status
+- **Exploratory Prototype:** This repository provides an auditable reference implementation and preliminary analysis. It does not claim a proof of $P = NP$.
+- **Reconstruction Required:** The continuous matrix $X$ is a fractional relaxation, not a tour. A separate reconstruction stage (weight-biased nearest-neighbour followed by 2-opt) is implemented to return valid Hamiltonian cycles.
+- **Conditional Claims:** Convergence and complexity statements are conditional working hypotheses, not proven theorems.
 
-### 🚀 Overview
-Traditional approaches to NP-Hard optimization rely on discrete combinatorial search and branching, suffering from exponential complexity blowup ($O(n!)$). This project implements an alternative continuous-relaxation paradigm that embeds the discrete decision space into a bounded continuous manifold governed by four rigorous algebraic pillars:
+📜 Licensing & Commercial Usage Policy
+This project operates under a Dual-Licensing Model governed by Asequoia:
+- Academic & Non-Commercial Use: Free to use, study, modify, and distribute for academic research, educational purposes, and personal experimentation.
+- Commercial Use: Any enterprise or commercial entity seeking to integrate or leverage this optimization framework must acquire a formal Commercial License from Asequoia.
 
-1. **Mass-Preserving Erosion (Landscape Pre-conditioning):** Gaussian convolution smoothing to eliminate deceptive local minima traps while strictly preserving the global optimum's center of mass invariant via Optimal Transport (Wasserstein metric).
-2. **Fluid Relaxation & Dynamic Suction:** Surface tension combined with dynamic Lagrange multipliers (vacuum potentials) that eliminate disconnected sub-tours and enforce exact degree requirements ($\sum X_{ij} = 2$).
-3. **Topological Repulsion:** Coulombic/magnetic potential gradients that prevent path self-intersections and X-junctions across the network graph.
-4. **Fractional Crystallization (Oil-and-Water Freezing):** A double-well homotopy cooling schedule that bridges the integrality gap and solidifies continuous flow variables into exact binary adjacency states ($X_{ij} \in \{0,1\}$) without bifurcation instabilities.
+For commercial licensing inquiries or enterprise integrations, please contact:
+Email: asequoia.innovation.hq@gmail.com
 
----
-
-### 📊 Performance & Visualization
-The framework achieves rapid convergence on large-scale node distributions, transforming rugged combinatorial energy landscapes into convex dynamical flows solvable in polynomial time bounds.
-- **Algorithmic Complexity:** Adaptive Runge-Kutta integration steps bound by $O(n^5)$.
-
----
-
-### 📜 Licensing & Commercial Usage Policy
-This project operates under a **Dual-Licensing Model** governed by **Asequoia**:
-- **Academic & Non-Commercial Use:** This framework is free to use, study, modify, and distribute for academic research, educational purposes, and personal experimentation.
-- **Commercial Use:** Any enterprise, corporation, startup, or commercial entity seeking to integrate, deploy, or leverage this optimization framework to generate revenue, optimize logistics, or drive commercial software must acquire a formal **Commercial License** from Asequoia.
-
-For commercial licensing inquiries, enterprise integrations, or custom consulting, please contact:
-**Email:** asequoia.innovation.hq@gmail.com
-
----
 © 2026 ELSAYED MOHAMED @ Asequoia Innovation Labs. All rights reserved.
